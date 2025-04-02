@@ -1,0 +1,35 @@
+import re
+filename="rainbow.txt"
+with open(filename,"w",encoding="utf-8") as file:
+file.write("Hello, this is a new text file.\n")
+file.write("Python makes file handlingeasy!\n")
+file.write("This file was created using Python.\n")
+
+print("File 'rainbow.txt' created and writtensuccessfully!")
+
+def read_file(rainbow.txt)
+try:
+    with open(rainbow.txt 'r' encoding='utf-8') as file:
+    text=file.read()
+    print("\n Full File Content:\n")
+    print(text)
+    words=re findall(r'\b[a-zA-Z]+\b',text)
+    return words
+except FileNotFoundErrorprint("Error: File not found!")
+return []
+
+def filter_words(words length):
+return [word for word in words if len(word)== length]
+
+words= read_file(rainbow.txt)
+
+if words:
+    lengths=[3,4,5]
+    print("\n Words of Specified Lengths:\n")
+    for length in lengths:
+        filtered_words=filter_words(words, length)
+        print(f" Words with {length} letters:")
+        print("," join(filtered_words) if filterd_words else"No words found.)
+
+
+
